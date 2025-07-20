@@ -14,6 +14,7 @@ const App = () => {
       <div className="max-w-[1400px] mx-auto bg-gradient-to-br from-black via-gray-900 to-gray-800 rounded-2xl">
         {/* <img src={profilePic} className=' h-20 w-20'></img>
         <span><FaFacebookF /></span> */}
+        
         <div id="home" className="sticky top-0 z-50">
           <Navbar />
         </div>
