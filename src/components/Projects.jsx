@@ -6,7 +6,7 @@ import wikiImage from '../assets/wiki.jpeg';
 import moneyImage from '../assets/money.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 import car from "../assets/car.jpeg" 
-
+import dubai from "../assets/dubai.jpeg"
 const PROJECTS = [
   {
     title: "Car Garage",
@@ -15,6 +15,14 @@ const PROJECTS = [
     technologies: ["React.js", "tailwind css","javascript", "node.js", "REST API", "mysql2"],
     view : "will Deploye soon",
     code : "https://github.com/teja836/Car_Garage"
+  },
+  {
+    title: "Dubai Tourism",
+    description: "A React-based Dubai tourism web application that allows users to explore destinations, view trip packages, enter booking details, and confirm travel plans using client-side routing, REST API integration, and a responsive UI.",
+    image : dubai,
+    technologies: ["React.js", "tailwind css","javascript", "node.js", "REST API", "mysql2"],
+    view : "will Deploye soon",
+    code : "https://github.com/teja836/Dubai_Tourism"
   },
   {
     title: 'E-commerce Application',

@@ -11,6 +11,7 @@ const techs = [
   { icon: <FaNodeJs className="text-green-600" size={48} />, name: 'Node.js' },
   { icon: <SiMongodb className="text-green-700" size={48} />, name: 'MongoDB' },
   { icon: <SiMysql className="text-blue-700" size={48} />, name: 'MySQL' },
+  
 ];
 
 const Technologies = () => {
