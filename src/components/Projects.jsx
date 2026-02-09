@@ -5,8 +5,16 @@ import jobyImage from '../assets/joby.jpeg';
 import wikiImage from '../assets/wiki.jpeg';
 import moneyImage from '../assets/money.jpeg';
 import iplImage from '../assets/ipl.jpeg';
-
+import car from "../assets/car.jpeg"
 const PROJECTS = [
+  {
+    title: "Car Garage",
+    description: "A full-stack, admin-controlled **car service management system** that enables garage owners to create job cards, manage vehicle service and repair details, track service status, and generate bills using React.js, Node.js, Express.js, and REST APIs.",
+    image : car,
+    technologies: ["React.js", "tailwind css","javascript", "node.js", "REST API", "mysql2"],
+    view : "will Deploye soon",
+    code : "https://github.com/teja836/Car_Garage"
+  },
   {
     title: 'E-commerce Application',
     description: 'A fully functional e-commerce website with features like product listing, shoping cart, and user authentication.',

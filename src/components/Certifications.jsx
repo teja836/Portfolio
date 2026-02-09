@@ -2,6 +2,10 @@ import React from 'react';
 
 const certifications = [
   {
+    name: "Industry Ready Certificate of Specialization",
+    link: "https://certificates.ccbp.in/intensive/irc?id=9GQ332GFAY"
+  },
+  {
     name: 'View Static Website Certificate',
     link: 'https://certificates.ccbp.in/intensive/static-website?id=TKIFROIIRF',
   },
