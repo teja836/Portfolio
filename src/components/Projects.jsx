@@ -5,7 +5,8 @@ import jobyImage from '../assets/joby.jpeg';
 import wikiImage from '../assets/wiki.jpeg';
 import moneyImage from '../assets/money.jpeg';
 import iplImage from '../assets/ipl.jpeg';
-import car from "../assets/car.jpeg"
+import car from "../assets/car.jpeg" 
+
 const PROJECTS = [
   {
     title: "Car Garage",
