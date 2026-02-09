@@ -48,7 +48,7 @@ const Aboutme = () => {
             I'm a passionate software developer specializing in Mern-stack development with expertise in JavaScript, React, and Node.js. I focus on building user-friendly applications and writing clean code. I’m passionate about continuous learning and collaboration. Check out my portfolio to see my work!
           </p>
           <a
-            href="SaiTeja_Developer (9).pdf"
+            href="SaiTeja_FullStack_Developer_Resume (8).pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
