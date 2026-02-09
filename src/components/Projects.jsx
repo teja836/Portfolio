@@ -1,75 +1,97 @@
-
-import React from 'react';
-import shoppingImage from '../assets/shoping.jpeg';
-import jobyImage from '../assets/joby.jpeg';
-import wikiImage from '../assets/wiki.jpeg';
-import moneyImage from '../assets/money.jpeg';
-import iplImage from '../assets/ipl.jpeg';
-import car from "../assets/car.jpeg" 
-import dubai from "../assets/dubai.jpeg"
+import React from "react";
+import shoppingImage from "../assets/shoping.jpeg";
+import jobyImage from "../assets/joby.jpeg";
+import wikiImage from "../assets/wiki.jpeg";
+import moneyImage from "../assets/money.jpeg";
+import iplImage from "../assets/ipl.jpeg";
+import car from "../assets/car.jpeg";
+import dubai from "../assets/dubai.jpg";
 const PROJECTS = [
   {
     title: "Car Garage",
-    description: "A full-stack, admin-controlled **car service management system** that enables garage owners to create job cards, manage vehicle service and repair details, track service status, and generate bills using React.js, Node.js, Express.js, and REST APIs.",
-    image : car,
-    technologies: ["React.js", "tailwind css","javascript", "node.js", "REST API", "mysql2"],
-    view : "will Deploye soon",
-    code : "https://github.com/teja836/Car_Garage"
+    description:
+      "A full-stack, admin-controlled **car service management system** that enables garage owners to create job cards, manage vehicle service and repair details, track service status, and generate bills using React.js, Node.js, Express.js, and REST APIs.",
+    image: car,
+    technologies: [
+      "React.js",
+      "tailwind css",
+      "javascript",
+      "node.js",
+      "REST API",
+      "mysql2",
+    ],
+    view: "will Deploye soon",
+    code: "https://github.com/teja836/Car_Garage",
   },
   {
     title: "Dubai Tourism",
-    description: "A React-based Dubai tourism web application that allows users to explore destinations, view trip packages, enter booking details, and confirm travel plans using client-side routing, REST API integration, and a responsive UI.",
-    image : dubai,
-    technologies: ["React.js", "tailwind css","javascript", "node.js", "REST API", "mysql2"],
-    view : "will Deploye soon",
-    code : "https://github.com/teja836/Dubai_Tourism"
+    description:
+      "A React-based Dubai tourism web application that allows users to explore destinations, view trip packages, enter booking details, and confirm travel plans using client-side routing, REST API integration, and a responsive UI.",
+    image: dubai,
+    technologies: [
+      "React.js",
+      "tailwind css",
+      "javascript",
+      "node.js",
+      "REST API",
+      "mysql2",
+    ],
+    view: "will Deploye soon",
+    code: "https://github.com/teja836/Dubai_Tourism",
   },
   {
-    title: 'E-commerce Application',
-    description: 'A fully functional e-commerce website with features like product listing, shoping cart, and user authentication.',
+    title: "E-commerce Application",
+    description:
+      "A fully functional e-commerce website with features like product listing, shoping cart, and user authentication.",
     image: shoppingImage,
-    technologies: ['React', 'CSS', 'Authentication'],
-    view: 'https://trndzcp.ccbp.tech/login',
-    code: 'https://github.com/teja836/Nxt-Trendz---Cart-Features',
+    technologies: ["React", "CSS", "Authentication"],
+    view: "https://trndzcp.ccbp.tech/login",
+    code: "https://github.com/teja836/Nxt-Trendz---Cart-Features",
   },
   {
-    title: 'Job Search Application',
-    description: 'Jobby App is a responsive job search platform that allows users to browse, search, and apply for jobs based on their preferences.',
+    title: "Job Search Application",
+    description:
+      "Jobby App is a responsive job search platform that allows users to browse, search, and apply for jobs based on their preferences.",
     image: jobyImage,
-    technologies: ['React', 'CSS', 'API'],
-    view: 'https://jobbycp.ccbp.tech/login',
-    code: 'https://github.com/teja836/Jobby-App',
+    technologies: ["React", "CSS", "API"],
+    view: "https://jobbycp.ccbp.tech/login",
+    code: "https://github.com/teja836/Jobby-App",
   },
   {
-    title: 'Wikipedia Search',
-    description: 'WikiSearch App is a responsive React application that allows users to search and view real-time Wikipedia results using the Wikipedia API.',
+    title: "Wikipedia Search",
+    description:
+      "WikiSearch App is a responsive React application that allows users to search and view real-time Wikipedia results using the Wikipedia API.",
     image: wikiImage,
-    technologies: ['React', 'Wikipedia API'],
-    view: 'https://wikisearchgoo.ccbp.tech/',
-    code: 'https://github.com/teja836/wikipedia-web-search',
+    technologies: ["React", "Wikipedia API"],
+    view: "https://wikisearchgoo.ccbp.tech/",
+    code: "https://github.com/teja836/wikipedia-web-search",
   },
   {
-    title: 'Money-Manager',
-    description: 'Money Manager App is a responsive React application that helps users track their income and expenses, manage their budget, and monitor their financial activity in real-time.',
+    title: "Money-Manager",
+    description:
+      "Money Manager App is a responsive React application that helps users track their income and expenses, manage their budget, and monitor their financial activity in real-time.",
     image: moneyImage,
-    technologies: ['React', 'CSS'],
-    view: 'https://moneycb.ccbp.tech/',
-    code: 'https://github.com/teja836/Money-Manager',
+    technologies: ["React", "CSS"],
+    view: "https://moneycb.ccbp.tech/",
+    code: "https://github.com/teja836/Money-Manager",
   },
   {
-    title: 'IPL Dash board',
-    description: 'IPL Dashboard App is a responsive React application that displays team-wise IPL statistics by fetching and visualizing data from an API in an engaging dashboard format.',
+    title: "IPL Dash board",
+    description:
+      "IPL Dashboard App is a responsive React application that displays team-wise IPL statistics by fetching and visualizing data from an API in an engaging dashboard format.",
     image: iplImage,
-    technologies: ['React', 'API', 'Dashboard'],
-    view: 'https://iplbord.ccbp.tech/',
-    code: 'https://github.com/teja836/IPL-Dashboard-App',
+    technologies: ["React", "API", "Dashboard"],
+    view: "https://iplbord.ccbp.tech/",
+    code: "https://github.com/teja836/IPL-Dashboard-App",
   },
 ];
 
 const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
-      <h1 className="my-20 text-center text-4xl text-white font-bold">Projects</h1>
+      <h1 className="my-20 text-center text-4xl text-white font-bold">
+        Projects
+      </h1>
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
@@ -83,7 +105,9 @@ const Projects = () => {
               />
             </div>
             <div className="w-full max-w-xl lg:w-3/4 flex flex-col justify-center">
-              <h6 className="mb-2 font-semibold text-lg text-yellow-300 text-center lg:text-left">{project.title}</h6>
+              <h6 className="mb-2 font-semibold text-lg text-yellow-300 text-center lg:text-left">
+                {project.title}
+              </h6>
               <p className="mb-4 text-sm text-neutral-400 text-center lg:text-left">
                 {project.description}
               </p>
