@@ -15,7 +15,14 @@ const PROJECTS = [
     description:
       "A full-stack, admin-controlled car service management system that enables garage owners to create job cards, manage vehicle service details, track service status, and generate bills using React.js, Node.js, Express.js, and REST APIs.",
     image: car,
-    technologies: ["React.js", "Tailwind CSS", "JavaScript", "Node.js", "REST API", "MySQL"],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "Node.js",
+      "REST API",
+      "MySQL",
+    ],
     view: "https://example.com",
     code: "https://github.com/teja836/Car_Garage",
   },
@@ -24,7 +31,14 @@ const PROJECTS = [
     description:
       "A React-based tourism web application that lets users explore destinations, view trip packages, enter booking details, and confirm travel plans with a responsive UI and client-side routing.",
     image: dubai,
-    technologies: ["React.js", "Tailwind CSS", "JavaScript", "Node.js", "REST API", "MySQL"],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "Node.js",
+      "REST API",
+      "MySQL",
+    ],
     view: "https://example.com",
     code: "https://github.com/teja836/Dubai_Tourism",
   },
