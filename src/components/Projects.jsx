@@ -6,8 +6,28 @@ import jobyImage from "../assets/joby.jpeg";
 import wikiImage from "../assets/wiki.jpeg";
 import moneyImage from "../assets/money.jpeg";
 import iplImage from "../assets/ipl.jpeg";
+import car from "../assets/car.jpeg";
+import dubai from "../assets/dubai.jpg";
 
 const PROJECTS = [
+  {
+    title: "Car Garage",
+    description:
+      "A full-stack, admin-controlled car service management system that enables garage owners to create job cards, manage vehicle service details, track service status, and generate bills using React.js, Node.js, Express.js, and REST APIs.",
+    image: car,
+    technologies: ["React.js", "Tailwind CSS", "JavaScript", "Node.js", "REST API", "MySQL"],
+    view: "https://example.com",
+    code: "https://github.com/teja836/Car_Garage",
+  },
+  {
+    title: "Dubai Tourism",
+    description:
+      "A React-based tourism web application that lets users explore destinations, view trip packages, enter booking details, and confirm travel plans with a responsive UI and client-side routing.",
+    image: dubai,
+    technologies: ["React.js", "Tailwind CSS", "JavaScript", "Node.js", "REST API", "MySQL"],
+    view: "https://example.com",
+    code: "https://github.com/teja836/Dubai_Tourism",
+  },
   {
     title: "E-commerce Application",
     description:
@@ -76,51 +96,51 @@ const Projects = () => {
           {PROJECTS.map((project, index) => (
             <Reveal key={project.title} delay={(index % 3) * 0.1}>
               <article className="group flex h-full overflow-hidden rounded-3xl border border-black/10 bg-white/55 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <div className="flex w-full flex-col">
-                <div className="overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={`${project.title} preview`}
-                    className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <h3 className="text-2xl font-bold text-gray-900">
-                    {project.title}
-                  </h3>
-                  <p className="mt-3 flex-1 text-sm leading-7 text-gray-700">
-                    {project.description}
-                  </p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {project.technologies.map((technology) => (
-                      <span
-                        key={technology}
-                        className="rounded-full border border-[#9b7627]/25 bg-[#f5e8c6] px-3 py-1 text-xs font-bold text-[#765719]"
+                <div className="flex w-full flex-col">
+                  <div className="overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      className="aspect-video w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-6">
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      {project.title}
+                    </h3>
+                    <p className="mt-3 flex-1 text-sm leading-7 text-gray-700">
+                      {project.description}
+                    </p>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {project.technologies.map((technology) => (
+                        <span
+                          key={technology}
+                          className="rounded-full border border-[#9b7627]/25 bg-[#f5e8c6] px-3 py-1 text-xs font-bold text-[#765719]"
+                        >
+                          {technology}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="mt-6 flex gap-3">
+                      <a
+                        href={project.view}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
                       >
-                        {technology}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="mt-6 flex gap-3">
-                    <a
-                      href={project.view}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
-                    >
-                      <FaExternalLinkAlt className="text-xs" /> Live Demo
-                    </a>
-                    <a
-                      href={project.code}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-gray-900 px-4 py-2.5 text-sm font-semibold text-gray-900 transition-colors hover:bg-gray-900 hover:text-white"
-                    >
-                      <FaGithub /> Code
-                    </a>
+                        <FaExternalLinkAlt className="text-xs" /> Live Demo
+                      </a>
+                      <a
+                        href={project.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-gray-900 px-4 py-2.5 text-sm font-semibold text-gray-900 transition-colors hover:bg-gray-900 hover:text-white"
+                      >
+                        <FaGithub /> Code
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
               </article>
             </Reveal>
           ))}

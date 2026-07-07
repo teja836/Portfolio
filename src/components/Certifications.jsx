@@ -11,6 +11,16 @@ const certifications = [
     link: "https://certificates.ccbp.in/intensive/introduction-to-databases?id=QCYYQUJMKU",
   },
   {
+    name: "Industry Ready Certificate of Specialization",
+    image: reactCertificate,
+    link: "https://certificates.ccbp.in/intensive/irc?id=9GQ332GFAY",
+  },
+  {
+    name: "Static Website",
+    image: javascriptCertificate,
+    link: "https://certificates.ccbp.in/intensive/static-website?id=TKIFROIIRF",
+  },
+  {
     name: "JavaScript",
     image: javascriptCertificate,
     link: "https://certificates.ccbp.in/intensive/dynamic-web-application?id=ZFJDPJQKEU",
@@ -36,14 +46,16 @@ const Certifications = () => {
       <div className="grid w-full max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {certifications.map((cert, idx) => (
           <article
-            key={idx}
+            key={`${cert.name}-${idx}`}
             className="group flex h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           >
-            <img
-              src={cert.image}
-              alt={`${cert.name} certificate`}
-              className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
+            {cert.image ? (
+              <img
+                src={cert.image}
+                alt={`${cert.name} certificate`}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            ) : null}
             <div className="flex flex-1 flex-col items-center justify-between gap-4 p-5 text-center">
               <h3 className="text-lg font-bold text-gray-800">
                 {cert.name} Certificate
